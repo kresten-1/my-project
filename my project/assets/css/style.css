@@ -1,0 +1,44 @@
+:root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --accent-2:#60a5fa;
+  --text:#e6eef6;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--text);background:linear-gradient(180deg,#071428 0%, #081526 40%, #04121a 100%);margin:0;padding:0}
+.container{max-width:900px;margin:0 auto;padding:1rem}
+.site-header{background:rgba(255,255,255,0.02);backdrop-filter:blur(4px);padding:.75rem 0}
+.site-header h1{margin:0;font-size:1.25rem}
+.site-header nav{margin-top:.5rem;display:flex;gap:.5rem;flex-wrap:wrap}
+.site-header nav a{color:var(--muted);margin-right:0;text-decoration:none;padding:.4rem .6rem;border-radius:6px;background:transparent}
+.site-header nav a:hover{background:rgba(255,255,255,0.03);color:var(--text)}
+
+/* Top banner style for main navigation */
+.top-banner{display:flex;gap:.5rem;align-items:center}
+.top-banner a{color:var(--text);text-decoration:none;padding:.4rem .7rem;border-radius:6px;background:linear-gradient(90deg,var(--accent),var(--accent-2));font-weight:600}
+
+.page-hero{min-height:60vh;display:flex;align-items:center;justify-content:center;color:var(--text)}
+.page-hero .overlay{background:rgba(0,0,0,0.65);padding:2rem;border-radius:8px;backdrop-filter:blur(6px)}
+
+/* Headings and text inside hero: improve readability against busy backgrounds */
+.page-hero h2{font-size:2.4rem;margin:.25rem 0;font-family:'Georgia','Palatino Linotype',serif;text-shadow:0 6px 20px rgba(0,0,0,0.7);letter-spacing:0.6px}
+.page-hero p{color:var(--text);font-size:1.05rem;line-height:1.6;text-shadow:0 3px 12px rgba(0,0,0,0.55)}
+
+
+/* Ending boxes */
+.ending-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.ending-box{background:linear-gradient(180deg, rgba(0,0,0,0.65), rgba(255,255,255,0.02));color:var(--text);padding:1.25rem;border-radius:12px;border-left:6px solid rgba(255,255,255,0.06);box-shadow:0 10px 30px rgba(2,6,23,0.7);font-family: 'Palatino Linotype','Georgia',serif}
+.ending-box h3{margin-top:0;margin-bottom:.35rem;font-family:'Georgia','Times New Roman',serif;letter-spacing:.6px}
+.ending-box p{color:rgba(230,238,246,0.92);line-height:1.6}
+.accent-red{border-left-color:#f97373}
+.accent-blue{border-left-color:#60a5fa}
+.accent-cyan{border-left-color:#34d399}
+.accent-gold{border-left-color:#fbbf24}
+.accent-purple{border-left-color:#a78bfa}
+
+.site-footer{padding:1rem 0;color:var(--muted)}
+.game-list{list-style:none;padding:0}
+.game-list li{background:rgba(255,255,255,0.02);margin:.5rem 0;padding:.5rem;border-radius:6px}
+@media (max-width:600px){.page-hero{min-height:40vh}.page-hero h2{font-size:1.5rem}}
